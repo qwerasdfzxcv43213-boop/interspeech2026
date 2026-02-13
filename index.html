@@ -238,7 +238,7 @@
 
         .sample-row {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            grid-template-columns: repeat(5, 1fr);
             gap: 16px;
             margin-bottom: 8px;
         }
@@ -294,6 +294,12 @@
 
             .sample-row {
                 grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1200px) {
+            .sample-row {
+                grid-template-columns: repeat(5, 1fr);
             }
         }
     </style>
